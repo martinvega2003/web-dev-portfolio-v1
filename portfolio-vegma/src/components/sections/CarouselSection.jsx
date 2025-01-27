@@ -4,7 +4,7 @@ import { ProjectCard } from "../ProjectCard";
 
 export const ProjectsSection = () => {
   return (
-    <section className="relative w-full h-fit flex flex-col justify-start items-center">
+    <section id="examples" className="relative w-full h-fit flex flex-col justify-start items-center">
       <div className="absolute inset-0 opacity-40 bg-blue-300" />
       <h2 className="relative z-10 w-full bg-white text-3xl md:text-6xl text-primary font-extrabold px-5 pt-28 pb-12">
         See Websites I created For Your Industry

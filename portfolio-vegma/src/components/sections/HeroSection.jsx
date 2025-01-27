@@ -62,7 +62,7 @@ const HeroSection = () => {
           <button
             className="mt-8 w-52 py-3 text-lg font-semibold hover:text-primary text-white hover:bg-white bg-transparent border-2 border-white shadow-lg hover:scale-110 transition duration-200"
           >
-            <Link to="form/">See Examples</Link>
+            <a href="#examples">See Examples</a>
           </button>
         </div>
       </div>
