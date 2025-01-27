@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, useAnimationControls } from "framer-motion";
+import { FaArrowRight } from 'react-icons/fa';
 
 export const ProjectCard = ({ name, desc, linkToCode, linkToDeploy, backgroundImage }) => {
     // Framer Motion controls
@@ -16,12 +17,13 @@ export const ProjectCard = ({ name, desc, linkToCode, linkToDeploy, backgroundIm
 
     return (
         <motion.div
-            className={`relative w-96 h-72 bg-black overflow-hidden flex items-center justify-center transition-all duration-200 cursor-pointer`}
+            className={`relative z-0 w-96 h-72 bg-black overflow-hidden flex items-center justify-center transition-all duration-200 cursor-pointer`}
             style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             whileHover={handleHover}
             onHoverEnd={handleHoverEnd}
         >
             <motion.div
+                onClick={() => window.open(linkToDeploy, '_blank', 'noopener,noreferrer')}
                 className="absolute bottom-[-100%] z-10 opacity-90 w-full h-4/5 bg-gray-300 pl-4 flex flex-col items-start justify-center transition-all duration-200"
                 initial={{ bottom: "-100%" }}
                 variants={{ show: { bottom: 0 }, hide: { bottom: "-100%" } }}
@@ -33,18 +35,14 @@ export const ProjectCard = ({ name, desc, linkToCode, linkToDeploy, backgroundIm
                 <p className="text-left text-sm w-4/5 text-secondary">
                     {desc}
                 </p>
-                <div className="w-full flex items-center justify-start">
-                    <a
-                        href={linkToCode}
-                        className="mr-4 font-bold text-primary transition-all duration-200 hover:text-black"
-                    >
-                        See Code
-                    </a>
+                <div className="relative z-10 w-full flex items-center justify-start mt-2">
                     <a
                         href={linkToDeploy}
-                        className="font-bold text-primary transition-all duration-200 hover:text-black"
+                        className="font-bold text-primary transition-all duration-200 hover:scale-110 flex justify-start items-center"
+                        target="_blank" 
+                        rel="noopener noreferrer"
                     >
-                        See Website
+                        See Website <span className="ml-1"><FaArrowRight /></span>
                     </a>
                 </div>
             </motion.div>
