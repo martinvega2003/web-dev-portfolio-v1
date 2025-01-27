@@ -4,19 +4,19 @@ import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-purple-600 py-12">
+    <footer className="bg-primary text-white py-12">
       <div className="container mx-auto px-6">
         {/* Final CTA */}
         <div className="flex flex-col items-center mb-8">
           <h2 className="text-3xl font-bold mb-4 text-center">
             Ready to take your website to the next level?
           </h2>
-          <p className="text-center text-gray-700 mb-6">
+          <p className="text-center text-gray-50 mb-6">
             Get in touch today to discuss your needs and make it happen.
           </p>
           <Link
             to="/form"
-            className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg shadow-md hover:scale-105 transition-transform duration-200"
+            className="bg-gradient-to-r from-accent to-blue-400 text-white px-6 py-3 rounded-lg shadow-md hover:scale-105 transition-transform duration-200"
           >
             Contact Me
           </Link>
@@ -72,7 +72,7 @@ const Footer = () => {
                   href="https://github.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-gray-900"
+                  className="hover:text-red-700"
                 >
                   <FaGithub size={24} />
                 </a>
@@ -81,17 +81,17 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Get In Touch</h3>
-            <p className="text-gray-700">
+            <p className="text-gray-200">
               Email: <a href="mailto:example@mail.com">example@mail.com</a>
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-200">
               Phone: <a href="tel:+123456789">+1 234 567 89</a>
             </p>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="text-center border-t border-gray-300 pt-6 text-gray-700">
+        <div className="text-center border-t border-gray-300 pt-6 text-white">
           © {new Date().getFullYear()} Your Portfolio Name. All Rights Reserved.
         </div>
       </div>

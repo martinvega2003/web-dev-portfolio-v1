@@ -12,9 +12,9 @@ const BenefitsSection = () => {
   return (
     <div className="relative py-24 bg-white text-gray-800">
       <div className="absolute inset-0 opacity-40">
-        <div className="h-1/3 w-full bg-transparent"></div>
-        <div className="h-1/3 w-full bg-blue-300"></div>
-        <div className="h-1/3 w-full bg-blue-400"></div>
+        <div className="h-1/3 md:h-2/4 w-full bg-transparent"></div>
+        <div className="h-1/3 md:h-1/4 w-full bg-blue-300"></div>
+        <div className="h-1/3 md:h-1/4 w-full bg-blue-400"></div>
       </div>
       <div className="relative max-w-6xl mx-auto px-6 text-center z-10">
         <h2 className="text-4xl font-bold text-accent mb-6">
@@ -22,7 +22,8 @@ const BenefitsSection = () => {
         </h2>
         <p className="text-lg text-gray-600 mb-12">
           My mission is to provide you with a high-quality, fully customizable
-          website that empowers your business.
+          website that empowers your business. And after that, help you rank it 
+          to get more leads on autopilot everyday
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
@@ -91,7 +92,7 @@ const benefits = [
   {
     title: "Affordable Pricing",
     description:
-      "Get all these benefits starting at just $97 with no upfront payment required!",
+      "The website is FREE to you, you only pay for the maintenance and SEO optimization if you decide so",
     icon: <FaRegCheckCircle size={40} />,
   },
 ];

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <motion.div
-      className="h-screen bg-gradient-to-r from-primary to-secondary flex items-center justify-center px-6"
+      className="h-screen bg-gradient-to-br from-primary via-primary to-secondary flex items-center justify-center px-6"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

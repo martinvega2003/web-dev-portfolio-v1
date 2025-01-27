@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ServicePage from './components/ServicePage'
 import { servicesData } from './data/servicesData'
 import ScrollToTop from './components/scrollToTop'
+import bgImageUrl from "../src/images/laptop-desktop.jpeg"
 
 function App() {
   
@@ -13,6 +14,15 @@ function App() {
     <BrowserRouter>
       <Header />
       <ScrollToTop />
+      {/* Background Image Layer */}
+      <div
+        className="fixed inset-0 bg-fixed bg-cover bg-center bg-no-repeat opacity-50"
+        style={{
+          backgroundImage: `url(${bgImageUrl})`,
+          zIndex: -1,
+          //backgroundAttachment: "scroll", // Ensures smooth scrolling
+        }}
+      ></div>
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/form' element={<Form />} />

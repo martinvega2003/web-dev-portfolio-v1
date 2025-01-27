@@ -16,48 +16,35 @@ export const ProjectCard = ({ name, desc, linkToCode, linkToDeploy, backgroundIm
 
     return (
         <motion.div
-            className={`relative w-96 h-72 bg-black overflow-hidden m-5 flex items-center justify-center rounded-2xl transition-all duration-200 hover:scale-110 hover:shadow-xl`}
+            className={`relative w-96 h-72 bg-black overflow-hidden flex items-center justify-center transition-all duration-200 cursor-pointer`}
             style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             whileHover={handleHover}
             onHoverEnd={handleHoverEnd}
         >
-            <h4 className="font-montserrat text-white text-3xl">
-                Proyecto #{numero}
-            </h4>
             <motion.div
-                className="absolute bottom-[-100%] z-10 opacity-90 w-full h-4/5 bg-gray-300 flex flex-col items-start justify-center transition-all duration-200"
+                className="absolute bottom-[-100%] z-10 opacity-90 w-full h-4/5 bg-gray-300 pl-4 flex flex-col items-start justify-center transition-all duration-200"
                 initial={{ bottom: "-100%" }}
                 variants={{ show: { bottom: 0 }, hide: { bottom: "-100%" } }}
                 animate={animationControls}
             >
-                <h2 className="text-base text-left text-black pl-2">
+                <h2 className="text-base text-left text-primary font-extrabold">
                     {name}
                 </h2>
-                <div className="flex flex-wrap items-center justify-start">
-                    {stack.map((stackItem, index) => (
-                        <h4
-                            key={index}
-                            className="text-primary text-sm mx-2 border-b-2 border-black transition-all duration-200 hover:scale-110"
-                        >
-                            {stackItem}
-                        </h4>
-                    ))}
-                </div>
-                <p className="text-left text-sm w-4/5 text-black pl-2">
+                <p className="text-left text-sm w-4/5 text-secondary">
                     {desc}
                 </p>
-                <div className="w-full px-4 flex items-center justify-start">
+                <div className="w-full flex items-center justify-start">
                     <a
                         href={linkToCode}
                         className="mr-4 font-bold text-primary transition-all duration-200 hover:text-black"
                     >
-                        ver codigo
+                        See Code
                     </a>
                     <a
                         href={linkToDeploy}
                         className="font-bold text-primary transition-all duration-200 hover:text-black"
                     >
-                        ver proyecto
+                        See Website
                     </a>
                 </div>
             </motion.div>

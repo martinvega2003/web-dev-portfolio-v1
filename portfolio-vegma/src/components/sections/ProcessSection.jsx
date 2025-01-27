@@ -35,15 +35,15 @@ const ProcessSection = () => {
       description: "Your website goes live! We’ll ensure everything is running smoothly and provide you with access.",
     },
     {
-      step: "Ongoing Support",
+      step: "Ongoing Work",
       day: false,
       icon: <FaWrench size={40} />,
-      description: "We offer ongoing support and maintenance to keep your site fresh and secure.",
+      description: "If you decide to make the upfront payment, I will work for a whole year with you and rank your page in the first google page.",
     },
   ];
 
   return (
-    <div className="bg-white py-24">
+    <div className="bg-white pt-48 pb-24">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-semibold text-primary text-center">Our Website Building Process</h2>
         <p className="text-lg text-gray-700 mt-4 text-center">

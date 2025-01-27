@@ -76,19 +76,23 @@ const Form = () => {
 
   return (
     <motion.div
-      className="flex flex-col items-center min-h-screen bg-white"
+      className="relative flex flex-col items-center min-h-screen py-24"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
+      <div className="absolute inset-0">
+        <div className="w-full h-1/2 bg-white" />
+        <div className="w-full h-1/2 bg-blue-300" />
+      </div>
       {/* Heading Section */}
       <motion.div
-        className="w-full bg-white text-center py-8 px-4"
+        className="relative z-10 w-full text-center py-8 px-4"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <h1 className="text-4xl font-bold text-purple-700 mb-4">
+        <h1 className="text-4xl font-bold text-accent mb-4">
           Let's Build Something Amazing Together!
         </h1>
         <p className="text-lg text-gray-600">
@@ -101,7 +105,7 @@ const Form = () => {
       <AnimatePresence>
         {message.text && (
           <motion.div
-            className={`fixed top-4 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg shadow-lg text-white ${
+            className={`fixed z-10 top-4 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg shadow-lg text-white ${
               message.type === "success" ? "bg-green-500" : "bg-red-500"
             }`}
             initial={{ opacity: 0, y: -20 }}
@@ -116,7 +120,7 @@ const Form = () => {
 
       {/* Form Section */}
       <motion.div
-        className="w-full max-w-lg mt-8 bg-gradient-to-r from-purple-400 to-purple-600 text-white rounded-lg shadow-lg p-6"
+        className="relative z-10 w-full max-w-lg mt-8 bg-gradient-to-br from-accent to-blue-300 text-white shadow-2xl rounded-lg p-8"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
@@ -142,7 +146,7 @@ const Form = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 rounded-md border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full p-2 border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-900"
               placeholder="Enter your name"
               required
             />
@@ -160,7 +164,7 @@ const Form = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-2 rounded-md border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full p-2 border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-900"
               placeholder="Enter your email"
               required
             />
@@ -178,7 +182,7 @@ const Form = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full p-2 rounded-md border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full p-2 border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-900"
               placeholder="Enter your phone (optional)"
             />
             {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
@@ -197,7 +201,7 @@ const Form = () => {
             >
               <Link
                 to="/"
-                className="bg-white text-purple-700 font-semibold py-2 px-4 rounded-md"
+                className="bg-white text-accent font-semibold py-2 px-4 rounded-md"
               >
                 Go Back
               </Link>
@@ -206,7 +210,7 @@ const Form = () => {
               type="submit"
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
-              className="bg-white text-purple-700 font-semibold py-2 px-4 rounded-md"
+              className="bg-white text-accent font-semibold py-2 px-4 rounded-md"
               onClick={handleSubmit}
             >
               Submit
