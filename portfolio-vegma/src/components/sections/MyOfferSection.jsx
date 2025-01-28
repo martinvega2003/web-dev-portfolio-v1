@@ -21,7 +21,7 @@ const MyOfferSection = () => {
     <div className="relative z-10">
       <div className="relative w-full top-0 h-72 bg-white mb-24" />
       <div className="md:flex md:justify-start md:items-end">
-        <div className="bg-white/80 -mb-24 lg:ml-16 p-8 w-[90%] lg:max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-start justify-center shadow-2xl rounded-lg border-2 border-primary">
+        <div className="bg-white/80 -mb-24 lg:ml-16 p-8 w-[95%] sm:w-[90%] lg:max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-start justify-center shadow-2xl rounded-lg border-2 border-primary">
           {/* Left Side: Text Content */}
           <motion.div
             className="lg:w-[45%] mb-8 lg:mb-0"

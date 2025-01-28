@@ -24,7 +24,7 @@ const AboutMe = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <div className="md:w-[45%] text-white bg-primary text-lg leading-relaxed mb-8 p-8 shadow-2xl border rounded-br-[100px]">
+          <div className="w-full sm:w-[90%] md:w-[45%] text-white bg-primary text-lg leading-relaxed mb-8 p-8 shadow-2xl border rounded-br-[100px]">
             <p>
               I'm a 21-year-old computer science student currently on a full paid scholarship at my university. I'm deeply passionate about creating modern and efficient websites that help businesses stand out online.
             </p>

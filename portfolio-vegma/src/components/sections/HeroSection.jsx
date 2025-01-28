@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <motion.div
-      className="h-screen bg-gradient-to-br from-primary via-primary to-secondary flex items-center justify-center px-6"
+      className="w-full h-screen bg-gradient-to-br from-primary via-primary to-secondary flex items-center justify-center px-6"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -25,7 +25,7 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.h1
-          className="text-5xl md:text-6xl font-extrabold text-white leading-tight mt-8 relative"
+          className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mt-8 relative"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
@@ -34,7 +34,7 @@ const HeroSection = () => {
         </motion.h1>
 
         <motion.p
-          className="mt-4 text-lg md:text-xl text-white"
+          className="mt-4 text-md sm:text-lg md:text-xl text-white"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -53,14 +53,14 @@ const HeroSection = () => {
         </motion.p>
 
         {/* Animated Button with Hover Effect */}
-        <div className="w-full flex gap-6 justify-center items-center">
+        <div className="w-full flex flex-col sm:flex-row gap-3 sm:gap-6 justify-start sm:justify-center items-center">
           <button
             className="mt-8 w-52 py-3 text-lg font-semibold text-primary hover:text-white bg-white hover:bg-transparent border-2 border-white shadow-lg hover:scale-110 transition duration-200"
           >
             <Link to="form/">Get Started Today</Link>
           </button>
           <button
-            className="mt-8 w-52 py-3 text-lg font-semibold hover:text-primary text-white hover:bg-white bg-transparent border-2 border-white shadow-lg hover:scale-110 transition duration-200"
+            className="sm:mt-8 w-52 py-3 text-lg font-semibold hover:text-primary text-white hover:bg-white bg-transparent border-2 border-white shadow-lg hover:scale-110 transition duration-200"
           >
             <a href="#examples">See Examples</a>
           </button>

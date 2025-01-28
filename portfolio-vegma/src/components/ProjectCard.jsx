@@ -15,12 +15,17 @@ export const ProjectCard = ({ name, desc, linkToCode, linkToDeploy, backgroundIm
         animationControls.start("hide");
     };
 
+    function redirectToPage(url) {
+      window.open(url, "_blank"); // Opens the URL in a new tab
+    }
+
     return (
         <motion.div
-            className={`relative z-0 w-96 h-72 bg-black overflow-hidden flex items-center justify-center transition-all duration-200 cursor-pointer`}
+            className={`relative z-0 w-72 h-60 sm:w-96 sm:h-72 bg-black overflow-hidden flex items-center justify-center transition-all duration-200 cursor-pointer`}
             style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             whileHover={handleHover}
             onHoverEnd={handleHoverEnd}
+            onClick={() => redirectToPage(linkToDeploy)}
         >
             <motion.div
                 onClick={() => window.open(linkToDeploy, '_blank', 'noopener,noreferrer')}

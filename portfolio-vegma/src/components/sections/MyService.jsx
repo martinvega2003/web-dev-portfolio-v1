@@ -19,7 +19,7 @@ const MyServiceSection = () => {
     >
       {/* Content Section */}
       <motion.div
-        className="h-full w-[90%] md:max-w-3xl bg-white/80 p-12 text-left rounded-tl-[100px] rounded-br-[100px] -mb-16 mt-16 border-2 border-accent shadow-2xl"
+        className="h-full w-[95%] sm:w-[90%] md:max-w-3xl bg-white/80 p-12 text-left rounded-tl-[100px] rounded-br-[100px] -mb-16 mt-16 border-2 border-accent shadow-2xl"
         variants={sectionVariants}
       >
         <h2 className="text-4xl font-bold mb-6 text-accent">My Service</h2>

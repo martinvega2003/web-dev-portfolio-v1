@@ -82,8 +82,8 @@ const ProcessSection = () => {
                 {/* Card */}
                 <div className="ml-8 flex-grow bg-gradient-to-r from-primary to-secondary text-white p-6 rounded-lg shadow-lg cursor-pointer">
                   <div className="mb-4">{item.icon}</div>
-                  <h3 className="text-2xl font-semibold">{item.step}</h3>
-                  <p className="text-lg mt-2">{item.description}</p>
+                  <h3 className="text-xl sm:text-2xl font-semibold">{item.step}</h3>
+                  <p className="text-md sm:text-lg mt-2">{item.description}</p>
                 </div>
               </motion.div>
             ))}
