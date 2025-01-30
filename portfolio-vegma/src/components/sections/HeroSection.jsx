@@ -19,8 +19,8 @@ const HeroSection = () => {
           animate={{ opacity: 0.2 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <div className="w-16 h-16 bg-accent rounded-full absolute -left-8"></div>
-          <div className="w-16 h-16 bg-accent rounded-full absolute -right-8"></div>
+          <div className="w-16 h-16 bg-accent rounded-full absolute left-0 sm:-left-8"></div>
+          <div className="w-16 h-16 bg-accent rounded-full absolute right-0 sm:-right-8"></div>
           <div className="h-[2px] w-full bg-accent"></div>
         </motion.div>
 
