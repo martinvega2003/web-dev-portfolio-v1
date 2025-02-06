@@ -1,39 +1,42 @@
 import React from "react";
 import { motion } from "framer-motion";
-import professionalPic from "../../images/professional-pic.jpeg"
+import professionalPic from "../../images/professional-pic.webp"
 
 const AboutMe = () => {
   return (
-    <div id="about" className="bg-white pt-40">
-      <div className="mx-auto flex flex-col justify-start items-center">
-        {/* Header Section with Name */}
-        <motion.div
-          className="text-center mb-10"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <h1 className="text-5xl font-bold text-accent">Hi, I'm Martin Vega</h1>
-          <p className="px-12 md:px-0 text-lg mt-4 text-secondary">A passionate web developer with a love for building modern, stunning websites.</p>
-        </motion.div>
-
+    <div id="about" className="bg-white pt-8 sm:pt-20">
+      <div>
         {/* About Me Text Section */}
         <motion.div
-          className="max-w-5xl flex flex-col items-center md:flex-row-reverse md:justify-around md:items-start mt-12 px-12 md:px-0"
+          className="flex flex-col items-center md:flex-row-reverse md:justify-around md:items-end lg:items-center mt-12 px-3 sm:px-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <div className="w-full sm:w-[90%] md:w-[45%] text-white bg-primary text-lg leading-relaxed mb-8 p-8 shadow-2xl border rounded-br-[100px]">
-            <p>
-              I'm a 21-year-old computer science student currently on a full paid scholarship at my university. I'm deeply passionate about creating modern and efficient websites that help businesses stand out online.
-            </p>
-            <p className="mt-6">
-              I specialize in building fully custom websites for businesses, ensuring they are not only functional but also visually appealing. I believe in the power of great design and seamless user experiences.
-            </p>
+          <div className="w-full md:w-1/2 p-8 shadow-2xl rounded-3xl mb-6 md:mb-12 lg:mb-20">
+            {/* Header Section with Name */}
+            <motion.div
+              className="text-left"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <p className="w-full py-1 mb-2 text-secondary font-light italic text-sm border-b-2">
+                Let me introduce myself
+              </p>
+              <h1 className="text-2xl sm:text-5xl md:text-3xl lg:text-4xl xl:text-6xl font-bold text-primary">Hi, I'm Martin Vega</h1>
+            </motion.div>
+            <div className="w-full mt-3 text-secondary text-md leading-relaxed">
+              <p>
+                I'm a 21-year-old passionate web developer and computer science student currently on a full paid scholarship at my university. I'm deeply in love about creating <strong>modern</strong> and <strong>efficient</strong> websites that help businesses <strong>stand out online</strong>.
+              </p>
+              <p className="mt-3">
+                I specialize in building fully <strong>custom coded</strong> websites for businesses, ensuring they are not only <strong>functional</strong> and <strong>visually appealing</strong>, but also extremely <strong>secure</strong>, <strong>fast</strong> and <strong>high-performance</strong>. I believe in the power of great design and seamless user experiences.
+              </p>
+            </div>
           </div>
           {/* Image or Avatar (Optional) */}
-          <div className="md:w-[30%] h-auto flex justify-center mt-6 md:mt-0">
+          <div className="md:w-[40%] h-auto flex justify-center mt-6 md:mt-0">
             <img
               src={professionalPic || "https://via.placeholder.com/200"}
               alt="Martin Vega"
