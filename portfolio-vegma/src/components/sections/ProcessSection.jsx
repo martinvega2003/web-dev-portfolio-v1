@@ -38,7 +38,7 @@ const ProcessSection = () => {
       step: "Ongoing Work",
       day: false,
       icon: <FaWrench size={40} />,
-      description: "If you decide to make the upfront payment, I will work for a whole year with you and rank your page in the first google page.",
+      description: "If you decide to make the upfront payment, I will keep your website on the highest level and you will not have worry about it anymore.",
     },
   ];
 

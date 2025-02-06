@@ -19,7 +19,7 @@ const AboutMe = () => {
 
         {/* About Me Text Section */}
         <motion.div
-          className="max-w-5xl flex flex-col items-center md:flex-row md:justify-around md:items-start mt-12 px-12 md:px-0"
+          className="max-w-5xl flex flex-col items-center md:flex-row-reverse md:justify-around md:items-start mt-12 px-12 md:px-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}

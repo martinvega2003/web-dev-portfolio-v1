@@ -1,7 +1,7 @@
-import imgOne from "../images/project-1-placeholder.webp"
-import imgTwo from "../images/project-2-placeholder.webp"
-import imgThree from "../images/project-3-placeholder.webp"
-import imgFour from "../images/project-4-placeholder.jpeg"
+import imgOne from "../images/project-one-thumbnail.png"
+import imgTwo from "../images/project-two-thumbnail.png"
+import imgThree from "../images/project-three-thumbnail.png"
+import imgFour from "../images/project-four-thumbnail.png"
 
 export const projectsData = [
     {
