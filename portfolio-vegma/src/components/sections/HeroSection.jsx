@@ -6,7 +6,7 @@ import heroImg from "../../images/hero-image-v1.webp"
 const HeroSection = () => {
   return (
     <motion.div
-      className="w-full h-fit bg-gradient-to-l from-primary via-primary to-primary md:from-primary md:via-primary md:to-blue-950 px-20 py-40"
+      className="w-full h-fit bg-gradient-to-l from-primary via-primary to-primary md:from-primary md:via-primary md:to-blue-950 px-3 sm:px-20 py-40"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
