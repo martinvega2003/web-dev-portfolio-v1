@@ -14,8 +14,8 @@ export const MainPage = () => {
         <HeroSection />
         <AboutMe />
         <BenefitsSection />
-        <MyServiceSection />
         <MyOfferSection />
+        <MyServiceSection />
         <ProcessSection />
         <ProjectsSection />
         <Footer />

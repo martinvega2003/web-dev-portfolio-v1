@@ -26,7 +26,7 @@ const AboutMe = () => {
               </p>
               <h1 className="text-2xl sm:text-5xl md:text-3xl lg:text-4xl xl:text-6xl font-bold text-primary">Hi, I'm Martin Vega</h1>
             </motion.div>
-            <div className="w-full mt-3 text-secondary text-md leading-relaxed">
+            <div className="w-full mt-5 text-secondary text-md leading-relaxed">
               <p>
                 I'm a 21-year-old passionate web developer and computer science student currently on a full paid scholarship at my university. I'm deeply in love about creating <strong>modern</strong> and <strong>efficient</strong> websites that help businesses <strong>stand out online</strong>.
               </p>

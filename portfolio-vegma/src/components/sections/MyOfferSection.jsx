@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { benefitsData as benefits } from "../../data/benefitsData";
 
 const MyOfferSection = () => {
   const leftTextVariants = {
@@ -18,60 +19,56 @@ const MyOfferSection = () => {
   };
 
   return (
-    <div className="relative z-10">
-      <div className="relative w-full top-0 h-72 bg-white mb-24" />
-      <div className="md:flex md:justify-start md:items-end">
-        <div className="bg-white/80 -mb-24 lg:ml-16 p-8 w-[95%] sm:w-[90%] lg:max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-start justify-center shadow-2xl rounded-lg border-2 border-primary">
+    <div className="relative z-10 p-6 sm:p-0">
+      <div className="flex justify-center md:justify-start items-center md:items-end">
+        <div className="bg-white/80 p-8 w-[95%] sm:w-[90%] md:max-w-[60%] flex flex-col items-start justify-center shadow-2xl rounded-lg border-2 border-primary md:shadow-none md:rounded-none md:border-none">
           {/* Left Side: Text Content */}
           <motion.div
-            className="lg:w-[45%] mb-8 lg:mb-0"
+            className="mb-4"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={leftTextVariants}
           >
-            <h2 className="text-2xl xl:text-4xl font-bold mb-4 text-accent">My Offer</h2>
-            <p className="text-md xl:text-lg leading-relaxed text-secondary">
-              Get a fully custom, hard-coded website built in just 7 days for{" "}
-              <span className="font-extrabold">FREE</span>. You pay only if you're satisfied with the final product. After payment, I handle the full setup for you, ensuring your site is live and accessible to your audience.  
-              I will help you with contentcreation, publishing three articlesper week, SEO and conversion rate optimization for a whole year, ensuring your website become an everyday lead-generator for your business within 12 months,
-              with a money back guarantee.
+            <p className="text-sm sm:text-md italic font-light mb-4 text-accent border-b-2 border-accent">What I Offer</p>
+            <h1 className="text-xl sm:text-3xl xl:text-5xl font-extrabold mb-4">Not Just A Website, But Peace Of Mind Too</h1>
+            <p className="text-sm sm:text-md xl:text-lg leading-relaxed text-secondary">
+              <strong>95% of websites without maintenance lose their traffic within six months.</strong> Most business owners invest in getting a website built but don’t realize that <strong>without regular updates, security checks, and SEO improvements, their site becomes invisible to potential customers.</strong>
+              <br/><br/>
+              <ul className="space-y-3">
+                <li><strong>75% of users judge a business’s credibility based on its website design and performance.</strong> If your site loads slowly, looks outdated, or has errors, potential clients will leave before even considering your offer.</li>
+                <li><strong>53% of mobile users abandon a website if it takes more than 3 seconds to load.</strong> A well-maintained website ensures fast loading speeds, seamless browsing, and a great user experience across all devices.</li>
+                <li><strong>92% of search traffic goes to the first page of Google.</strong> Without proper SEO, your site remains hidden while your competitors attract all the traffic.</li>
+              </ul>
+              <br/>
+              Get a <strong>custom-built website 100% free</strong> when you subscribe to my <strong>affordable website maintenance & SEO plan.</strong> I’ll design and develop your site from scratch—<strong>you only pay if you love it.</strong> If you’re not satisfied, you keep the code at no cost. My service ensures your website <strong>runs smoothly, stays secure, and attracts clients,</strong> so you never have to worry about technical issues or SEO again.
             </p>
+            <div className="w-full border-t-2 border-accent my-6"></div>
           </motion.div>
 
-          {/* Vertical Divider */}
-          <div className="hidden lg:block mx-4 border-l-2 border-accent" style={{ minHeight: "400px", paddingTop: "32px" }} />
-          
-          {/* Horizontal Divider */}
-          <div className="block lg:hidden my-4 border-b-2 border-accent" style={{ minWidth: "100%" }} />
-
-          {/* Right Side: Bullet Points */}
+          {/* Bottom Side: Bullet Points */}
           <motion.div
-            className="lg:w-[55%] flex items-start pt-20"
+            className="flex items-start"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
           >
-            <ul className="space-y-4">
-              {[
-                "Full ownership of your website with no hidden costs.",
-                "Highly customizable—adapt your site to your needs.",
-                "Delivered and ready to go live in just 7 days.",
-                "Don't worry about all the process of making the website rank.",
-                "All the services needed to make your websites a lead generator bundle together",
-                "After payment, you still have a money back guarantee",
-              ].map((item, index) => (
-                <motion.li
+            <div className="w-full flex flex-col md:flex-row justify-start items-start flex-wrap">
+              {benefits.map((item, index) => (
+                <motion.div
                   key={index}
                   variants={bulletPointVariants}
                   custom={index}
-                  className={`flex items-start ${index === 0 ? "mt-[-20px]" : ""}`}
+                  className="w-full lg:w-[45%] flex items-start rounded-3xl py-3 my-3 mr-3 lg:mr-6"
                 >
-                  <FaCheckCircle className="min-w-5 min-h-5 text-accent mr-3 mt-1" />
-                  <span className="text-secondary text-md xl:text-lg">{item}</span>
-                </motion.li>
+                  <FaCheckCircle className="min-w-7 min-h-7 text-accent mr-3 mt-1" />
+                  <div className="w-full">
+                    <h3 className="font-bold text-xl text-primary">{item.title}</h3>
+                    <p className="text-secondary text-sm xl:text-lg">{item.text}</p>
+                  </div>
+                </motion.div>
               ))}
-            </ul>
+            </div>
           </motion.div>
         </div>
         <div className="w-[15%] hidden lg:block"></div>
@@ -81,4 +78,3 @@ const MyOfferSection = () => {
 };
 
 export default MyOfferSection;
-
