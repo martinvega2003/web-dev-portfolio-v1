@@ -44,7 +44,7 @@ const ProcessSection = () => {
 
   return (
     <div className="bg-white pt-48 pb-24">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="px-6">
         <h2 className="text-4xl font-semibold text-primary text-center">Our Website Building Process</h2>
         <p className="text-lg text-gray-700 mt-4 text-center">
           A simple and efficient process to deliver your website in just 7 days.
@@ -81,8 +81,10 @@ const ProcessSection = () => {
 
                 {/* Card */}
                 <div className="ml-8 flex-grow bg-gradient-to-r from-primary to-secondary text-white p-6 rounded-lg shadow-lg cursor-pointer">
-                  <div className="mb-4">{item.icon}</div>
-                  <h3 className="text-xl sm:text-2xl font-semibold">{item.step}</h3>
+                  <div className="flex justify-start items-center mb-2">
+                    <div className="mr-4">{item.icon}</div>
+                    <h3 className="text-xl sm:text-2xl font-semibold">{item.step}</h3>
+                  </div>
                   <p className="text-md sm:text-lg mt-2">{item.description}</p>
                 </div>
               </motion.div>

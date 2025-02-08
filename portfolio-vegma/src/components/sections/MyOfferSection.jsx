@@ -19,7 +19,7 @@ const MyOfferSection = () => {
   };
 
   return (
-    <div className="relative z-10 p-6 sm:p-0">
+    <div className="relative z-10 p-6 md:p-0">
       <div className="flex justify-center md:justify-start items-center md:items-end">
         <div className="bg-white/80 p-8 w-[95%] sm:w-[90%] md:max-w-[60%] flex flex-col items-start justify-center shadow-2xl rounded-lg border-2 border-primary md:shadow-none md:rounded-none md:border-none">
           {/* Left Side: Text Content */}
@@ -34,13 +34,7 @@ const MyOfferSection = () => {
             <h1 className="text-xl sm:text-3xl xl:text-5xl font-extrabold mb-4">Not Just A Website, But Peace Of Mind Too</h1>
             <p className="text-sm sm:text-md xl:text-lg leading-relaxed text-secondary">
               <strong>95% of websites without maintenance lose their traffic within six months.</strong> Most business owners invest in getting a website built but don’t realize that <strong>without regular updates, security checks, and SEO improvements, their site becomes invisible to potential customers.</strong>
-              <br/><br/>
-              <ul className="space-y-3">
-                <li><strong>75% of users judge a business’s credibility based on its website design and performance.</strong> If your site loads slowly, looks outdated, or has errors, potential clients will leave before even considering your offer.</li>
-                <li><strong>53% of mobile users abandon a website if it takes more than 3 seconds to load.</strong> A well-maintained website ensures fast loading speeds, seamless browsing, and a great user experience across all devices.</li>
-                <li><strong>92% of search traffic goes to the first page of Google.</strong> Without proper SEO, your site remains hidden while your competitors attract all the traffic.</li>
-              </ul>
-              <br/>
+              <div className="my-2" />
               Get a <strong>custom-built website 100% free</strong> when you subscribe to my <strong>affordable website maintenance & SEO plan.</strong> I’ll design and develop your site from scratch—<strong>you only pay if you love it.</strong> If you’re not satisfied, you keep the code at no cost. My service ensures your website <strong>runs smoothly, stays secure, and attracts clients,</strong> so you never have to worry about technical issues or SEO again.
             </p>
             <div className="w-full border-t-2 border-accent my-6"></div>

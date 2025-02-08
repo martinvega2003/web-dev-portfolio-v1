@@ -14,22 +14,19 @@ const MyServiceSection = () => {
           <div className="flex items-start gap-4">
             <FaChartLine className="text-accent w-10 h-10 shrink-0" />
             <p>
-              <strong>75% of users judge a business’s credibility based on its website design and performance.</strong> 
-              If your site loads slowly, looks outdated, or has errors, potential clients will leave before even considering your offer.
+              <strong>75% of users judge a business’s credibility based on its website design and performance. </strong> 
             </p>
           </div>
           <div className="flex items-start gap-4">
             <FaClock className="text-accent w-10 h-10 shrink-0" />
             <p>
               <strong>53% of mobile users abandon a website if it takes more than 3 seconds to load.</strong> 
-              A well-maintained website ensures fast loading speeds, seamless browsing, and a great user experience across all devices.
             </p>
           </div>
           <div className="flex items-start gap-4">
             <FaMobileAlt className="text-accent w-10 h-10 shrink-0" />
             <p>
               <strong>92% of search traffic goes to the first page of Google.</strong> 
-              Without proper SEO, your site remains hidden while your competitors attract all the traffic.
             </p>
           </div>
         </div>

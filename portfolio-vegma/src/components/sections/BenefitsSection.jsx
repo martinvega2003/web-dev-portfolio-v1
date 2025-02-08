@@ -33,7 +33,7 @@ const BenefitsSection = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-white h-64 p-6 border shadow-sm transition duration-300 transform cursor-pointer group
+              className="bg-white h-full p-6 border shadow-sm transition duration-300 transform cursor-pointer group
               hover:scale-105 hover:bg-gradient-to-r hover:from-blue-500 hover:to-accent"
             >
               <div
