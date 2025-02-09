@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ServicePage from './components/ServicePage'
 import { servicesData } from './data/servicesData'
 import ScrollToTop from './components/scrollToTop'
-import bgImageUrl from "../src/images/laptop-desktop.jpeg"
+import bgImageUrl from "../src/images/my-offer-bg.webp"
 
 function App() {
   

@@ -6,7 +6,7 @@ const MyServiceSection = () => {
     <section className="flex flex-col md:flex-row-reverse items-center gap-8 px-4 sm:px-6 py-12 sm:py-24 bg-primary text-white">
       {/* Left Side - Text */}
       <div className="md:w-1/2">
-        <h2 className="text-4xl font-bold mb-4">Why You Need This</h2>
+        <h2 className="text-2xl sm:text-4xl font-bold mb-4">Why You Need This</h2>
         <p className="text-lg mb-6 text-gray-400">
           A slow, outdated, or poorly optimized website is costing you traffic, conversions, and revenue. Here’s why upgrading your site is essential:
         </p>

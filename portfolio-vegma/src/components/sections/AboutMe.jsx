@@ -10,12 +10,6 @@ const AboutMe = () => {
       <div className="absolute inset-0 bg-transparent opacity-50">
         <div className="absolute h-20 sm:h-32 md:h-48 lg:h-80 w-20 sm:w-32 md:w-48 lg:w-80 rounded-full -left-10 md:-left-20 lg:-left-40 -top-10 md:-top-20 lg:-top-40 bg-accent" />
         <div className="absolute h-20 sm:h-32 md:h-48 lg:h-80 w-20 sm:w-32 md:w-48 lg:w-80 rounded-full -left-10 md:-left-20 lg:-left-40 top-5 md:top-10 lg:top-20 bg-transparent border-2" />
-        <div className="absolute bottom-10 right-5 text-accent text-6xl md:text-7xl lg:text-9xl">
-          <FaCode />
-        </div>
-        <div className="absolute bottom-80 md:bottom-[21rem] lg:bottom-80 right-5 text-accent text-6xl md:text-7xl lg:text-9xl">
-          <FaLaptopCode />
-        </div>
       </div>
 
       <div>
@@ -86,7 +80,7 @@ const AboutMe = () => {
             ].map((skill, index) => (
               <motion.div
                 key={index}
-                className={`px-6 py-3 rounded-lg ${skill.color} text-xl font-medium transition duration-300 hover:scale-125 cursor-pointer`}
+                className={`relative z-10 px-6 py-3 rounded-lg ${skill.color} text-xl font-medium transition duration-300 hover:scale-125 cursor-pointer`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.3 }}
