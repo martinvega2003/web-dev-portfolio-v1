@@ -3,6 +3,7 @@ export const paymentPlans = [
       id: 1,
       name: "3 Months",
       price: "$147",
+      monthlyPrice: "49$",
       monthly: "+$25/mo Hosting",
       features: [
         "✅ Design And Development",
@@ -22,6 +23,7 @@ export const paymentPlans = [
       id: 2,
       name: "6 Months",
       price: "$247",
+      monthlyPrice: "41$",
       monthly: "+$25/mo Hosting",
       features: [
         "✅ Design And Development",
@@ -41,6 +43,7 @@ export const paymentPlans = [
       id: 3,
       name: "12 Months + SEO",
       price: "$997",
+      monthlyPrice: "83$",
       monthly: "+$25/mo Hosting",
       features: [
         "✅ Everything in the 6-Month Plan",

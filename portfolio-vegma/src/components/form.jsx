@@ -76,14 +76,15 @@ const Form = () => {
 
   return (
     <motion.div
-      className="relative flex flex-col items-center min-h-screen py-24 px-3 sm:px-0"
+      className="relative flex flex-col items-center min-h-screen py-24"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
       <div className="absolute inset-0">
-        <div className="w-full h-1/2 bg-white" />
-        <div className="w-full h-1/2 bg-blue-300" />
+        <div className="w-full h-1/2 bg-white hidden sm:block" />
+        <div className="w-full h-1/2 bg-blue-300 hidden sm:block" />
+        <div className="w-full h-full bg-gradient-to-b from-white via-blue-50 to-blue-300 sm:hidden" />
       </div>
       {/* Heading Section */}
       <motion.div
@@ -120,7 +121,7 @@ const Form = () => {
 
       {/* Form Section */}
       <motion.div
-        className="relative z-10 w-full max-w-lg mt-8 bg-gradient-to-br from-accent to-blue-300 text-white shadow-2xl rounded-lg p-8"
+        className="max-w-[95%] sm:max-w-lg relative z-10 w-full mt-8 bg-gradient-to-br from-accent to-blue-300 text-white shadow-2xl rounded-lg p-8"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}

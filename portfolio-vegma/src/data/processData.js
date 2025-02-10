@@ -40,31 +40,31 @@ export const processData = [
   },
   {
     step: "SEO & Performance Optimization",
-    day: "Day 8",
+    day: "Day 10",
     icon: MdSpeed,
     image: imgFive,
     description: "Your website is optimized for <strong>speed, SEO, and performance</strong> to rank higher on Google. I fine-tune every element—image compression, clean code, and metadata—to improve visibility. A fast-loading site is key, as <strong>53% of users leave if a page takes over 3 seconds to load</strong>. This ensures your site performs at an elite level."
   },
   {
     step: "Testing & Final Tweaks",
-    day: "Day 9",
+    day: "Day 12",
     icon: MdBugReport,
     image: imgSix,
     description: "Before launch, I conduct <strong>thorough testing</strong> to ensure everything works flawlessly. I check for bugs, responsiveness, SEO, and performance across multiple devices and browsers. Any final adjustments are made here, guaranteeing a <strong>smooth and professional user experience</strong> before your site goes live."
   },
   {
-    step: "Website Launch!",
-    day: "Day 10",
-    icon: MdRocketLaunch,
-    image: imgSeven,
-    description: "Your website is officially live and ready to <strong>attract visitors and convert leads</strong>! Unlike other developers who disappear after launch, I offer post-launch support to ensure a seamless transition. You now have a <strong>powerful digital asset</strong> working for you 24/7, driving business growth and credibility."
-  },
-  {
     step: "Your Decision: Keep It or Walk Away",
-    day: "Day 11",
+    day: "Day 14",
     icon: MdCardGiftcard,
     image: imgEight,
     description: "If you love your website, we move forward with an <strong>optional maintenance plan</strong> to keep it secure and updated. However, if you’re not satisfied, you can <strong>walk away at no cost</strong>—no risk, no obligations. Most clients choose to continue, seeing the long-term value of an optimized website."
+  },
+  {
+    step: "Website Launch!",
+    day: "Day 14",
+    icon: MdRocketLaunch,
+    image: imgSeven,
+    description: "Your website is officially live and ready to <strong>attract visitors and convert leads</strong>! Unlike other developers who disappear after launch, I offer post-launch support to ensure a seamless transition. You now have a <strong>powerful digital asset</strong> working for you 24/7, driving business growth and credibility."
   },
   {
     step: "Ongoing Maintenance & Support",

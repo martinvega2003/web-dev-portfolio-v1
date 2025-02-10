@@ -1,10 +1,7 @@
-import './App.css'
 import Form from './components/form'
 import Header from './components/Header'
 import { MainPage } from './components/mainPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ServicePage from './components/ServicePage'
-import { servicesData } from './data/servicesData'
 import ScrollToTop from './components/scrollToTop'
 import bgImageUrl from "../src/images/my-offer-bg.webp"
 

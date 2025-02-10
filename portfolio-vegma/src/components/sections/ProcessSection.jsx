@@ -7,9 +7,9 @@ const ProcessSection = () => {
   return (
     <div className="bg-white pt-48 pb-24">
       <div className="px-6">
-        <h2 className="text-4xl font-semibold text-primary text-center">Our Website Building Process</h2>
+        <h2 className="text-4xl font-semibold text-primary text-center">My Website Building Process</h2>
         <p className="text-lg text-gray-700 mt-4 text-center">
-          A simple and efficient process to deliver your website in just 7 days.
+          A simple and efficient process to deliver your website in just 14 days.
         </p>
 
         {/* Timeline & Cards */}

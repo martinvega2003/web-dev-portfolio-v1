@@ -12,7 +12,7 @@ export default function PaymentPlans() {
   return (
     <section className="py-16 px-6 md:px-12 bg-white">
       <h2 className="text-sm sm:text-base md:text-lg font-extralight italic text-secondary uppercase text-left border-b-2">
-        Our Pricing
+        My Pricing
       </h2>
       <p className="text-xl sm:text-3xl md:text-6xl md:w-2/5 font-bold text-primary text-left mt-2">
         Pricing packages for every budget
@@ -47,7 +47,7 @@ export default function PaymentPlans() {
                 </li>
               ))}
             </ul>
-            <p className="text-3xl font-bold mt-6">{plan.price}</p>
+            <p className="text-3xl font-bold mt-6">{plan.price}<span className="text-sm italic font-extralight"> / At Just {plan.monthlyPrice} Per Month</span></p>
             <p className="text-sm">{plan.monthly}</p>
             <button onClick={() => handleRedirect("/form")} className={`mt-4 ${plan.bgWhite ? "bg-primary hover:bg-accent" : "bg-accent hover:bg-transparent hover:border-accent"} py-2 px-4 text-white rounded-lg w-full border-2 border-transparent transition duration-300`}>
                 {plan.buttonText}
