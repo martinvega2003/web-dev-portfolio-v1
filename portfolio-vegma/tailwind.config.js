@@ -10,7 +10,10 @@ export default {
         primary: "#111827",
         secondary: "#374151",
         accent: "#0066b2",
-      }
+      },
+      fontFamily: {
+        heading: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],

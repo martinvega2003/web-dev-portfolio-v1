@@ -28,7 +28,7 @@ const HeroSection = () => {
         <div className="w-full flex flex-col md:flex-row justify-start items-center">
           <div className="w-full md:w-1/2 text-center md:text-left mb-9 md:mb-0">
             <motion.h1
-              className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-extrabold text-white leading-tight mt-8 relative"
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-extrabold font-heading text-white leading-tight mt-8 relative"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}

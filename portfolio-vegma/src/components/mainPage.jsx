@@ -7,6 +7,7 @@ import ProcessSection from './sections/ProcessSection'
 import { ProjectsSection } from './sections/CarouselSection'
 import Footer from './Footer'
 import AboutMe from './sections/AboutMe'
+import PaymentPlans from './sections/PaymentPlans'
 
 export const MainPage = () => {
   return (
@@ -17,6 +18,7 @@ export const MainPage = () => {
         <MyOfferSection />
         <MyServiceSection />
         <ProcessSection />
+        <PaymentPlans />
         <ProjectsSection />
         <Footer />
     </>

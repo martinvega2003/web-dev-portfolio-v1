@@ -19,11 +19,11 @@ const ProcessSection = () => {
             {process.map((item, index) => (
               <motion.div
                 key={index}
-                className="flex w-full h-fit items-start mb-12 overflow-hidden"
+                className="flex w-full h-fit items-start mb-6 overflow-y-hidden"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ amount: 0.5 }} // Trigger when 50% of the element is visible
-                transition={{ duration: 0.4, delay: index * 0.1 }} // Faster duration and minimal delay
+                transition={{ duration: 0.3, delay: index * 0.01 }} // Faster duration and minimal delay
               >
                 {/* Circle and Line */}
                 <div className="flex flex-col items-center">
@@ -42,16 +42,16 @@ const ProcessSection = () => {
                 </div>
 
                 {/* Card */}
-                <div className={`ml-4 sm:ml-8 flex-grow flex flex-col ${index % 2 === 0 ? "md:flex-row bg-primary" : "md:flex-row-reverse bg-secondary"} text-white items-start p-6 rounded-lg cursor-pointer`}>
-                  <div className="flex flex-col w-full  md:w-1/2 p-1 sm:p-2 md:px-4">
+                <div className={`ml-2 sm:ml-8 flex-grow flex ${index % 2 === 0 ? "flex-col md:flex-row bg-primary" : "flex-col-reverse md:flex-row-reverse bg-secondary"} text-white items-start sm:p-6 rounded-lg overflow-hidden cursor-pointer`}>
+                  <div className="flex flex-col w-full  md:w-1/2 p-3 sm:p-2 md:px-4">
                     <div className="flex justify-start items-center mb-2">
                       <div className="mr-4 text-2xl sm:text-5xl">{<item.icon />}</div>
                       <h3 className="text-sm sm:text-2xl font-extrabold">{item.step}</h3>
                     </div>
                     <p dangerouslySetInnerHTML={{__html: item.description}} className="text-[11px] sm:text-lg mt-2 text-gray-300" />
                   </div>
-                  <div className="w-full md:w-1/2 h-full flex justify-center items-center p-1 sm:p-2">
-                    <img src={item.image} alt="" className="w-full h-auto rounded-lg" />
+                  <div className="w-full md:w-1/2 h-full flex justify-center items-center mt-1 sm:p-2">
+                    <img src={item.image} alt="" className="w-full h-auto sm:rounded-lg" />
                   </div>
                 </div>
               </motion.div>

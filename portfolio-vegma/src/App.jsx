@@ -26,9 +26,6 @@ function App() {
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/form' element={<Form />} />
-        <Route path='/services/maintenance' element={<ServicePage {...servicesData.maintenance} />} />
-        <Route path='/services/blogging' element={<ServicePage {...servicesData.contentCreation} />} />
-        <Route path='/services/seo' element={<ServicePage {...servicesData.seoOptimization} />} />
       </Routes>
     </ BrowserRouter>
   )
